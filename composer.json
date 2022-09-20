@@ -1,0 +1,10 @@
+{
+  "name": "ld-web/epsi-sf-intro",
+  "description": "PHP intro for EPSI students",
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "require": {}
+}
