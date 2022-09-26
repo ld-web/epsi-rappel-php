@@ -3,16 +3,18 @@
 namespace App;
 
 // 1 - Définition d'une classe = structure
-class User
+abstract class User implements IDisplayable
 {
-  private int $id;
-  private string $login;
-  private string $password;
+  protected int $id;
+  protected string $login;
+  protected string $password;
 
-  public function __construct(string $login)
+  public function __construct(string $login = "Valeur par défaut")
   {
     $this->login = $login;
   }
+
+  abstract public function display();
 
   // ID - pas de setter : lecture seule, impossible de le modifier
   // en-dehors de la classe
