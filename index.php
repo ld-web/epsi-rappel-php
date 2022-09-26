@@ -15,7 +15,8 @@ echo $user->getLogin(); // Utilisation du getter
 var_dump($user);
 
 $admin = new User("Johnny");
-// $admin->setLogin("Johnny");
+$admin->setPassword("12345")
+  ->setLogin("Administrateur");
 echo $admin->getLogin();
 
 var_dump($admin);
